@@ -131,7 +131,7 @@ struct msgbuf *msgbufp;
 
 static char current_boot_tag[BOOT_TAG_SZ + 1] = BOOT_TAG;
 SYSCTL_STRING(_kern, OID_AUTO, boot_tag, CTLFLAG_RDTUN | CTLFLAG_NOFETCH,
-    current_boot_tag, 0, "Tag added to dmesg at start of boot");
+    current_boot_tag, 0, "Welcome to ENX - Freed from the fruit.");
 
 static int log_console_output = 1;
 SYSCTL_INT(_kern, OID_AUTO, log_console_output, CTLFLAG_RWTUN,
