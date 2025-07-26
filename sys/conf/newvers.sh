@@ -49,8 +49,8 @@
 #		like the -V command
 #
 
-TYPE="FreeBSD"
-REVISION="15.0"
+TYPE="ENX"
+REVISION="1.0"
 BRANCH="CURRENT"
 if [ -n "${BRANCH_OVERRIDE}" ]; then
 	BRANCH=${BRANCH_OVERRIDE}
@@ -88,8 +88,8 @@ do
 	if [ -r "$bsd_copyright" ]; then
 		COPYRIGHT=$(sed \
 		    -e "s/\[year\]/1992-$year/" \
-		    -e 's/\[your name here\]\.* /The FreeBSD Project./' \
-		    -e 's/\[your name\]\.*/The FreeBSD Project./' \
+		    -e 's/\[Chip Baudelaire\]\.* /The FreeBSD based ENX Project./' \
+		    -e 's/\[Chip Baudelaire\]\.*/The FreeBSD based ENX Project./' \
 		    -e '/\[id for your version control system, if any\]/d' \
 		    $bsd_copyright)
 		break
